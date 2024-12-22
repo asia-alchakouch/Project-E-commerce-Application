@@ -10,7 +10,9 @@
     <header>
         <h1>Our Products</h1>
         <nav>
-            <a href="wishlist_page.html">Wishlist</a>
+            <a href="wishlist.html" class="wishlist-link">
+                Wishlist <span id="wishlist-count">0</span>
+            </a>
         </nav>
     </header>
     <main>
@@ -19,15 +21,14 @@
                 <img src="product1.jpg" alt="Product 1">
                 <h2>Product Name 1</h2>
                 <p>$120</p>
-                <button>Add to Wishlist</button>
+                <a href="wishlist.html?add=Product+Name+1" class="wishlist-btn">Add to Wishlist</a>
             </div>
             <div class="product">
                 <img src="product2.jpg" alt="Product 2">
                 <h2>Product Name 2</h2>
                 <p>$200</p>
-                <button>Add to Wishlist</button>
+                <a href="wishlist.html?add=Product+Name+2" class="wishlist-btn">Add to Wishlist</a>
             </div>
-            <!-- Repeat for more products -->
         </section>
     </main>
     <footer>
