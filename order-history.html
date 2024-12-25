@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="sidebar">
+        <ul>
+          <li>
+            Manage My Account
+            <ul>
+              <li>
+                <a href="mange-account.html">My Profile</a>
+              </li>
+              <li><a href="#">Address Book</a></li>
+              <li><a href="#">My Payment Options</a></li>
+            </ul>
+          </li>
+          <li>
+            My Orders
+            <ul>
+              <li><a href="#" class="active">Order History</a></li>
+              <li><a href="#">My Returns</a></li>
+              <li><a href="#">My Cancellations</a></li>
+            </ul>
+          </li>
+          <li>
+            My Wishlist
+            <ul>
+              <li><a href="Wishlist_Page.html">My WishingList</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <section class="order-history">
+        <h1>Order History</h1>
+
+        <div>
+          <div class="order">
+            <h2>Order #12345</h2>
+            <p><strong>Order Date:</strong> November 25, 2024</p>
+            <p><strong>Status:</strong> Shipped</p>
+            <p><strong>Total Price:</strong> $1299.99</p>
+            <a href="order-details.html" class="view-details"
+              >View Order Details</a
+            >
+          </div>
+
+          <div class="order">
+            <h2>Order #12346</h2>
+            <p><strong>Order Date:</strong> November 18, 2024</p>
+            <p><strong>Status:</strong> Delivered</p>
+            <p><strong>Total Price:</strong> $899.99</p>
+            <a href="order-details.html" class="view-details"
+              >View Order Details</a
+            >
+          </div>
+
+          <!-- More orders can be added here -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
