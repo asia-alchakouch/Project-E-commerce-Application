@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="sidebar">
+        <ul>
+          <li>
+            Manage My Account
+            <ul>
+              <li>
+                <a href="mange-account.html">My Profile</a>
+              </li>
+              <li><a href="address.html" class="active">Address Book</a></li>
+              <li><a href="#">My Payment Options</a></li>
+            </ul>
+          </li>
+          <li>
+            My Orders
+            <ul>
+              <li><a href="order-history.html">Order History</a></li>
+              <li><a href="#">My Returns</a></li>
+              <li><a href="#">My Cancellations</a></li>
+            </ul>
+          </li>
+          <li>
+            My Wishlist
+            <ul>
+              <li><a href="Wishlist_Page.html">My WishingList</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <section class="address-book">
+        <h1>My Saved Addresses</h1>
+        <p>Manage your saved addresses for faster checkout.</p>
+
+        <!-- Add New Address Button -->
+        <button class="add-address-btn">+ Add New Address</button>
+
+        <!-- Address Card -->
+        <div class="address-card">
+          <p><strong>John Doe</strong></p>
+          <p>123 Main Street</p>
+          <p>New York, NY, 10001</p>
+          <p>United States</p>
+          <p>Phone: (123) 456-7890</p>
+          <div class="address-actions">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+            <button class="default-btn">Set as Default</button>
+          </div>
+        </div>
+
+        <!-- Default Address Tag -->
+        <div class="address-card default-address">
+          <p>
+            <strong>Jane Smith</strong>
+            <span class="default-label"> - Default</span>
+          </p>
+          <p>456 Elm Street</p>
+          <p>Los Angeles, CA, 90001</p>
+          <p>United States</p>
+          <p>Phone: (987) 654-3210</p>
+          <div class="address-actions">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
