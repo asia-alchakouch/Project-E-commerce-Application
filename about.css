@@ -1,0 +1,156 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap:5vw;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    flex-wrap:wrap;
+    margin-top: 7%;
+}
+
+
+.square {
+    width:20vw;
+    height: 30vh;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    margin: 2%;
+
+}
+.icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    margin:0 auto;
+    vertical-align: top;
+    margin-top: 20px;
+}
+.img {
+    width: 25vw;
+    height: auto;
+    margin: auto;
+    
+    }
+.social_media{
+    max-width: 1.5rem;
+    height: auto;
+    
+}
+.space_around{
+    margin-top:7%;
+}
+.text_description{
+    max-width: 25vw;
+}
+
+
+.about-main-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+
+    height: 100vh;
+}
+
+
+.story-text {
+    width: 40%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.about_main_image {
+    width: 45%; 
+}
+
+
+.about_main_image img {
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+}
+
+.story-text h1 {
+    margin-bottom: 20px;
+}
+
+.num-heading{
+
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+}
+.bold{
+    font-weight: bold;
+}
+
+.center-text{
+    text-align: center;
+}
+.font_poppins{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+  }
+
+@media (max-width: 768px){
+    .about-main-section{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .story-text, .about_main_image{
+        width: 90%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about_main_image img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+    .about_main_image img{
+        margin: 0 auto;
+    }
+
+    .img{
+        width: 40vw;
+        height: auto;
+    }
+
+    
+}
+@media (max-width: 900px){
+    .container{
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    .square{
+        width: 45%;
+        height: auto;
+    
+    }
+}
+
+
+
