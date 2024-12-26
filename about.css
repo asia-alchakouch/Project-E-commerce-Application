@@ -32,12 +32,6 @@
     margin: 2%;
 
 }
-.shadow-gray{
-    box-shadow: 0 0 35px 3px rgb(220,220,220);
-}
-.shadow-white{
-    box-shadow: 0 0 35px 3px whitesmoke;
-}
 .icon {
     width: 4rem;
     height: 4rem;
@@ -45,13 +39,6 @@
     margin:0 auto;
     vertical-align: top;
     margin-top: 20px;
-}
-
-.space_around{
-    margin-top:7%;
-}
-.text_description{
-    max-width: 25vw;
 }
 .img {
     width: 25vw;
@@ -64,6 +51,13 @@
     height: auto;
     
 }
+.space_around{
+    margin-top:7%;
+}
+.text_description{
+    max-width: 25vw;
+}
+
 
 .about-main-section {
     display: flex;
