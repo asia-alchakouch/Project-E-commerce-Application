@@ -1,0 +1,232 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+/* --------Base styles and CSS reset--------- */
+:root {
+  /* Colors */
+  --primary: #FFFFFF;
+  --primary1: #363738;
+  --secondary: #F5F5F5;
+  --secondary1: #FEFAF1;
+  --secondary2: #DB4444;
+  --bg: #FFFFFF;
+  --text: #FAFAFA;
+  --text1: #7D8184;
+  --text2: #000000;
+  --button: #000000;
+  --button1: #00FF66;
+  --button2: #DB4444;
+  --hover-button: #E07575;
+  --hover-button1: #A0BCE0;
+  --star: #FFAD33;
+  
+  /*Font Size*/
+  --size-heading-bold: 1.5rem;
+  --size-title-regular: 1rem;
+
+  /* Spacing */
+  --space-xxs: 0.15rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-xxl: 6rem;
+  
+  /* Layout */
+  --container: 1200px;
+  --radius: 0.5rem;
+  
+  /* Effects */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", serif;
+  line-height: 1.6; /* needs to be changed*/
+  color: var(--text2);
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* -------------Layout styles------------- */
+
+/* Header */
+header {
+    background: var(--primary);
+    padding-top: var(--space-md);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    max-width: var(--container);
+    padding: var(--space-md);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: var(--space-lg);
+    list-style: none;
+  }
+
+  .user-actions{
+    gap: var(--space-sm);
+  }
+
+  @media (max-width: 768px) {
+  
+    nav {
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+  
+  }
+
+
+  /* Main body */
+  main {
+    flex: 1;
+    margin: var(--space-xl) 0;
+  }
+  
+  section {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+  }
+
+
+
+
+  /* Footer */
+  footer {
+    background: var(--button);
+    padding: var(--space-xl) var(--space-md);
+    margin-top: auto;
+  }
+  
+  footer > div {
+    max-width: var(--container);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: var(--space-lg);
+  }
+
+  .footer-section {
+    padding: var(--space-md);
+    margin: var(--space-lg);
+  }
+
+
+  /* -------------Typography styles------------- */
+
+  /* General */
+  h1, h2, h3 ,h4 {
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4{
+    font-size: 1rem;
+  }
+  
+  p {
+    margin-bottom: var(--space-md);
+    color: var(--text2);
+  }
+
+  a {
+    color: var(--text2);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  a:hover{
+    text-decoration: underline;
+    color: var(--hover-button);
+  }
+
+
+  /* Header */
+  .logo {
+    font-weight: bold;
+    font-size: var(--size-heading-bold);
+    color: var(--text2);
+  }
+
+  nav a {
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  i{
+    font-size: 1.3rem;
+  }
+
+  .user-actions i:hover{
+    color: var(--hover-button);
+  }
+
+  /* Footer */
+  footer a, footer h3,footer p, footer .logo{ 
+    color: var(--text);
+  }
+
+  /* -------------Components styles------------- */
+
+  button {
+    padding: 1.2rem 3.3rem;
+    color: var(--primary);
+    font-size: var(--space-md);
+    background: var(--button2);
+    border: none;
+    border-radius: 0.3rem;
+  }
+
+  button:hover{
+    transition: var(--transition);
+    background-color: var(--hover-button);
+  }
+
+
+
+
+
+    /* -------------Utiltites styles------------- */
+
+    
+    /* Footer */
+    footer .logo{
+      margin-bottom: var(--space-xl);
+    }
