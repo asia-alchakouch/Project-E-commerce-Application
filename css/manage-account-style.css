@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main.user-account {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 20%;
+    padding: 3rem;
+    border-right: 1px solid #e6e6e6;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 2rem;
+    margin: 0;
+  }
+  
+  .sidebar ul > li {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sidebar ul ul {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+  
+  .sidebar ul ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar ul ul li a {
+    text-decoration: none;
+    color: #ababab;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .sidebar ul ul li a.active,
+  .sidebar ul ul li a:hover {
+    color: #e63946;
+  }
+  
+  /* Profile Content Styles */
+  
+  .profile-content {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    padding-left: 9rem;
+    height: 100%; 
+  }
+  
+  .profile-content h2 {
+    margin-bottom: 1.5rem;
+    color: #e63946;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  
+  .profile-content form {
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: #cfcece3f;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #e75965;
+    box-shadow: 0 0 3px rgba(230, 57, 70, 0.4);
+  }
+  
+  /* Password Section */
+  .profile-content h3 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .cancel-btn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .save-btn {
+    background-color: #e63946;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-btn:hover {
+    background-color: #d62839;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    main.user-account {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #e6e6e6;
+    }
+  
+    .profile-content {
+      padding: 1.5rem;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  
