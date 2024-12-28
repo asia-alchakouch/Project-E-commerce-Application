@@ -4,7 +4,7 @@
     gap: 5%;
 }
 .contact-card{
-    width: 17vw;
+    width: 23vw;
     height: auto; /*changed from 25rem*/
     padding: 32px;
 }
@@ -17,6 +17,7 @@
     gap:20px;
     height: 40px;
     width: auto;
+    margin: 20px;
 }
 
 .icon{
@@ -40,6 +41,7 @@
     margin-top:7px;
 }
 .user_info{
+    padding:10px;
     width:30%;
     height: 3rem;
     background-color: rgb(248,248,248);
@@ -68,12 +70,15 @@
     border: none;
     resize: vertical; /* Allow resizing vertically only */
     background-color: rgb(248,248,248);
+    padding:10px;
 
 }
 .submit_button {
     text-align:center;
 }
-
+.submit_button{
+    margin: 2rem;
+}
 @media (max-width: 1100px){
     .align_horizentally{
         flex-direction: column;
@@ -83,8 +88,6 @@
     .contact-card{
         width: 80vw;
         height: auto;
-
-
     }
     .form_container{
         width: 80vw;
