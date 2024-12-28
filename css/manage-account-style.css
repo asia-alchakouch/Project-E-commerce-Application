@@ -17,7 +17,7 @@
   
   /* Sidebar Styles */
   .sidebar {
-    width: 25%;
+    width: 30%;
     padding: 3rem;
     border-right: 1px solid #e6e6e6;
   }
@@ -53,7 +53,7 @@
   
   .sidebar ul ul li a.active,
   .sidebar ul ul li a:hover {
-    color: #e63946;
+    color: #DB4444;
   }
   
   /* Profile Content Styles */
@@ -70,7 +70,7 @@
   
   .profile-content h2 {
     margin-bottom: 1.5rem;
-    color: #e63946;
+    color: #DB4444;
     font-size: 1.5rem;
     text-align: left;
   }
@@ -108,7 +108,7 @@
   
   .form-group input:focus {
     outline: none;
-    border-color: #e75965;
+    border-color: #DB4444;
     box-shadow: 0 0 3px rgba(230, 57, 70, 0.4);
   }
   
@@ -143,7 +143,7 @@
   }
   
   .save-btn {
-    background-color: #e63946;
+    background-color: #DB4444;
     border: none;
     color: white;
     padding: 0.75rem 1.5rem;
@@ -154,7 +154,7 @@
   }
   
   .save-btn:hover {
-    background-color: #d62839;
+    background-color: #DB4444;
   }
   
   /* Responsive Styles */
