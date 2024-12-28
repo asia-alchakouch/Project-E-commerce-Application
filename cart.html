@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html" class="active">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="cart-item">
+                <img src="product1.jpg" alt="Product Image">
+                <div class="item-info">
+                    <h2>Product Name</h2>
+                    <p>Price: $25.00</p>
+                    <div class="quantity">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" value="1" min="1">
+                    </div>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <!-- Repeat for more products -->
+        </div>
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Subtotal: $25.00</p>
+            <p>Tax: $2.50</p>
+            <p>Total: $27.50</p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-commerce Application. All rights reserved.</p>
+    </footer>
+</body>
+</html>
