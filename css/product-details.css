@@ -1,0 +1,161 @@
+
+/* Import base styles */
+@import url(base.css);
+
+/* General Reset */
+:root {
+  --primary: #FFFFFF;
+  --secondary: #F9F9F9;
+  --text: #333333;
+  --text-light: #777777;
+  --highlight: #DB4444;
+  --button-bg: #000000;
+  --button-hover: #555555;
+  --star: #FFAD33;
+  --radius: 8px;
+  --spacing: 16px;
+  --transition: 0.3s ease;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--secondary);
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Layout */
+header, footer {
+  background: var(--primary);
+  padding: var(--spacing);
+}
+
+main {
+  padding: var(--spacing) calc(2 * var(--spacing));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, p {
+  margin-bottom: var(--spacing);
+}
+
+/* Product Details */
+.product-container {
+  display: flex;
+  gap: 2rem;
+  background: var(--primary);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+}
+
+.product-info .price {
+  color: var(--highlight);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product-info .description {
+  color: var(--text-light);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--spacing);
+}
+
+.rating i {
+  color: var(--star);
+}
+
+.purchase-options {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.purchase-options input {
+  width: 60px;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid var(--text-light);
+  border-radius: var(--radius);
+}
+
+.purchase-options button {
+  padding: 0.8rem 1.5rem;
+  color: var(--primary);
+  background: var(--button-bg);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.purchase-options button:hover {
+  background: var(--button-hover);
+}
+
+/* Reviews Section */
+.reviews-section {
+  margin-top: 2rem;
+}
+
+.reviews-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.review {
+  padding: 1rem;
+  background: var(--primary);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--spacing);
+}
+
+.review h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.review p {
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .purchase-options {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .purchase-options button {
+    width: 100%;
+  }
+}
+
+
