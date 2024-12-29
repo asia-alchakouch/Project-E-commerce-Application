@@ -1,16 +1,27 @@
 @import url(base.css);
 
-/* General */
+/*-----------General For Most Sections----------*/
 
+/* Product Grid List */
 .flash-sales-products , .best-selling-products-container , .explore-section-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: var(--space-lg);
 }
 
+/* Produst box */
 .product > *{
     margin-bottom: var(--space-xs);
 }
+
+.product{
+    transition: var(--transition);
+}
+
+.product:hover{
+    transform: translateY(-5px);
+}
+
 
 .product-box{
     background-color: var(--secondary);
@@ -23,6 +34,13 @@
     height: 150px;
     object-fit: contain;
 }
+
+.product > p {
+    color: var(--secondary2);
+    font-weight: 500;
+}
+
+/* Other */
 
 main h2 {
     letter-spacing: var(--space-xxs);
@@ -41,6 +59,11 @@ section hr {
     justify-content: center;
     align-items: center;
     margin-bottom: var(--space-xxl);
+}
+
+.rating > i {
+    font-size: 1rem;
+    color: var(--star);
 }
 
 /*-----------Banner And Categories Section ---------*/
@@ -171,25 +194,6 @@ section hr {
 .flash-sales-products{
     margin-bottom: var(--space-xl);
 }
-
-.product{
-    transition: var(--transition);
-}
-
-.product:hover{
-    transform: translateY(-5px);
-}
-
-.rating > i {
-    font-size: 1rem;
-    color: var(--star);
-}
-
-.product > p {
-    color: var(--secondary2);
-    font-weight: 500;
-}
-
 
 /*--------------Browse By Category Section -------------*/
 
