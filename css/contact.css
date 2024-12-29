@@ -1,0 +1,108 @@
+.align_horizentally{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.contact-card{
+    width: 23vw;
+    height: auto; /*changed from 25rem*/
+    padding: 32px;
+}
+.form_container{
+    width: 50vw;
+    padding: 32px;
+}
+.contact-icon-text{
+    display: flex;
+    gap:20px;
+    height: 40px;
+    width: auto;
+    margin: 20px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.shadow-box {
+    box-shadow: 0px 0px 10px rgb(240,240,240);
+
+}
+.font_poppins{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bold{
+    font-weight: 500;
+    font-size: larger;
+}
+.text_up{
+    margin-top:7px;
+}
+.user_info{
+    padding:10px;
+    width:30%;
+    height: 3rem;
+    background-color: rgb(248,248,248);
+    border:none;
+    font-size: large;
+
+}
+.user_info_container{
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-between;
+
+}
+.all_form_inputs{
+
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+.textarea {
+    width: 100%;
+    height: auto;
+    font-size: large;
+    border: none;
+    resize: vertical; /* Allow resizing vertically only */
+    background-color: rgb(248,248,248);
+    padding:10px;
+
+}
+.submit_button {
+    text-align:center;
+}
+.submit_button{
+    margin: 2rem;
+}
+@media (max-width: 1100px){
+    .align_horizentally{
+        flex-direction: column;
+        gap: 5vw;
+        align-items: center;
+    }
+    .contact-card{
+        width: 80vw;
+        height: auto;
+    }
+    .form_container{
+        width: 80vw;
+        height: auto;
+    }
+    .user_info_container{
+        flex-direction: column;
+    }
+    .user_info{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .textarea{
+        width: 100%;
+
+    }
+    
+}

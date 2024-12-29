@@ -5,110 +5,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Profile</title>
     <link rel="stylesheet" href="./css/manage-account-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
 
   <body>
-    <main class="user-account">
-      <div class="sidebar">
-        <ul>
+    <!--------HEADER------->
+    <header>
+      <nav>
+        <h2 class="logo">LOGO</h2>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+        <ul class="user-actions">
           <li>
-            Manage My Account
-            <ul>
-              <li>
-                <a href="mange-account.html" class="active">My Profile</a>
-              </li>
-              <li><a href="address.html">Address Book</a></li>
-              <li><a href="#">My Payment Options</a></li>
-            </ul>
+            <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
           </li>
           <li>
-            My Orders
-            <ul>
-              <li><a href="order-history.html">My Orders</a></li>
-              <li><a href="#">My Returns</a></li>
-              <li><a href="#">My Cancellations</a></li>
-            </ul>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </li>
           <li>
-            My Wishlist
-            <ul>
-              <li><a href="Wishlist_Page.html">My WishingList</a></li>
-            </ul>
+            <a href="mange-account.html"><i class="fa-solid fa-user"></i></a>
           </li>
         </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <!--------Main Content------->
+    <main class="user-account">
+      <div class="user-account-container">
+        <div class="sidebar">
+          <ul>
+            <li>
+              Manage My Account
+              <ul>
+                <li>
+                  <a href="mange-account.html" class="active">My Profile</a>
+                </li>
+                <li><a href="address.html">Address Book</a></li>
+                <li><a href="#">My Payment Options</a></li>
+              </ul>
+            </li>
+            <li>
+              My Orders
+              <ul>
+                <li><a href="order-history.html">My Orders</a></li>
+                <li><a href="#">My Returns</a></li>
+                <li><a href="#">My Cancellations</a></li>
+              </ul>
+            </li>
+            <li>
+              My Wishlist
+              <ul>
+                <li><a href="Wishlist_Page.html">My WishingList</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section class="profile-content">
+          <h2>Edit Your Profile</h2>
+          <form action="/save-profile" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  value="Md"
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  value="Rimel"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value="rimel111@gmail.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  value="Kingston, 5236, United States"
+                />
+              </div>
+            </div>
+            <h3>Password Changes</h3>
+            <div class="form-group">
+              <label for="current-password"></label>
+              <input
+                type="password"
+                id="current-password"
+                name="current-password"
+                placeholder="Current Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="new-password"></label>
+              <input
+                type="password"
+                id="new-password"
+                name="new-password"
+                placeholder="New Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password"></label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm New Password"
+              />
+            </div>
+            <div class="form-actions">
+              <button type="button" class="cancel-btn">Cancel</button>
+              <button type="submit" class="save-btn">Save Changes</button>
+            </div>
+          </form>
+        </section>
       </div>
-      <section class="profile-content">
-        <h2>Edit Your Profile</h2>
-        <form action="/save-profile" method="post">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" value="Md" />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                value="Rimel"
-              />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value="rimel111@gmail.com"
-              />
-            </div>
-            <div class="form-group">
-              <label for="address">Address</label>
-              <input
-                type="text"
-                id="address"
-                name="address"
-                value="Kingston, 5236, United States"
-              />
-            </div>
-          </div>
-          <h3>Password Changes</h3>
-          <div class="form-group">
-            <label for="current-password"></label>
-            <input
-              type="password"
-              id="current-password"
-              name="current-password"
-              placeholder="Current Password"
-            />
-          </div>
-          <div class="form-group">
-            <label for="new-password"></label>
-            <input
-              type="password"
-              id="new-password"
-              name="new-password"
-              placeholder="New Password"
-            />
-          </div>
-          <div class="form-group">
-            <label for="confirm-password"></label>
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-              placeholder="Confirm New Password"
-            />
-          </div>
-          <div class="form-actions">
-            <button type="button" class="cancel-btn">Cancel</button>
-            <button type="submit" class="save-btn">Save Changes</button>
-          </div>
-        </form>
-      </section>
     </main>
+
+    <!--------FOOTER------->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <div>
+            <h2 class="logo">LOGO</h2>
+          </div>
+          <h3>Subscribe</h3>
+          <p>Get 10% off your first order</p>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><p>Location: Sharjah, UAE</p></li>
+            <li>
+              <p>
+                <a href="mailto:ecommerce@gmail.com">ecommerce@gmail.com</a>
+              </p>
+            </li>
+            <li>
+              <p><a href="tel:123456789">+971-75-585-4322</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Account</h3>
+          <ul>
+            <li><a href="account.html">My Account</a></li>
+            <li><a href="signup.html">Login / Register</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="index.html">Shop</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Link</h3>
+          <ul>
+            <li><a href="https://example.com">Privacy Policy</a></li>
+            <li><a href="https://example.com">Terms Of Use</a></li>
+            <li><a href="https://example.com">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Download App</h3>
+          <p>Save $3 with App New User Only</p>
+          <div class="footer-section-app-links">
+            <a href="https://example.com"
+              ><i class="fa-brands fa-app-store-ios"></i
+            ></a>
+            <a href="https://example.com"
+              ><i class="fa-brands fa-google-play"></i
+            ></a>
+          </div>
+          <div class="footer-section-social-links">
+            <a href="https://example.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://example.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://example.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://example.com"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
