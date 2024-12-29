@@ -96,3 +96,64 @@
     text-decoration: underline;
   }
   
+
+ /* Responsive Styles */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .login-image {
+    display: none; /
+  }
+
+  section.login {
+    padding: 20px;
+  }
+
+  .form-group input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .form-submit button {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  section.login h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  section.login {
+    padding: 15px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+
+  .form-submit button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  section.login h1 {
+    font-size: 20px;
+  }
+
+  section.login div p {
+    font-size: 12px;
+  }
+
+  section.login div p a {
+    font-size: 12px;
+  }
+}
