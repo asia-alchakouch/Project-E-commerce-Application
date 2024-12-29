@@ -2,6 +2,12 @@
 section{
     margin: 0px;
 }
+body{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    display: flex;
+}
 
 .image_box{
     background-color: var(--secondary);
@@ -52,7 +58,7 @@ section{
 input[type="radio"]{
     display: none;
 }
-.custom_radio{
+.custom_radio_color{
     width: 20px;
     height: 20px;
     border-radius: 60%;
@@ -66,6 +72,99 @@ input[type="radio"]{
 .pink{
     background-color: var(--hover-button);
 }
-input[type="radio"]:checked + .custom_radio {
-    border: 2px solid rgb(52, 50, 50);
-  }
+input[type="radio"]:checked + .custom_radio_color {
+    border: 2px solid rgb(50, 50, 50);
+}
+
+.size_picker{
+    display: flex;
+    gap: 5px;
+}
+.size-btn{
+    width: 40px;
+
+    text-align: center;
+    margin: 0 5px;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+input[type="radio"]:checked +.size-btn{
+    background-color:var(--secondary2);
+    border:none;
+    color: white;
+}
+label{
+    cursor: pointer;
+}
+
+.like{
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+.like > img{
+    width: 40px;
+    object-fit: contain;
+}
+.like:hover{
+    background-color: var(--secondary2);
+}
+
+.delivery_info_container{
+    border: 1px solid black;
+    padding: 10px;
+}
+.icon{
+    width: 3rem;
+    height: auto;
+}
+.bold{
+    font-weight: bold;
+}
+.delivery_info_container2{
+    display: flex;
+    flex-direction: row;
+}
+hr{
+    margin: 5px 0;
+}
+.delivery_info_container2 > div >p{
+    margin:0;
+    margin-left: 10px;
+}
+.red{
+    color:var(--secondary2)
+}
+.image-box-medium{
+    background-color: var(--secondary);
+    width: fit-content;
+    padding: var(--space-md);
+    margin: var(--space-md);
+}
+.image-box-medium > img{
+    height:200px;
+}
+.related_items_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gold{
+    color: var(--star);
+}
+.increment_icon{
+    width:130px;
+    height: 50px;
+}
+.submit-increment-like-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.image_descrition_container{
+    margin: var(--space-md);
+}

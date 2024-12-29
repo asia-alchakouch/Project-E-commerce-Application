@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
     <link rel="stylesheet" href="css/product-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <section class="main_section_container">
@@ -34,7 +35,13 @@
         <div>
             <p class="item_name"><h3>Havic HV G-92 Gamepad</h3></p>
             <div class="rating">
-                <img class="star_icon" src="assets/icon/Four Star.png">
+                <div class="rating">
+                    <i class="fa-solid fa-star gold"></i>
+                    <i class="fa-solid fa-star gold"></i>
+                    <i class="fa-solid fa-star gold"></i>
+                    <i class="fa-solid fa-star gold"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <p class="reviews_num">(150 reviews)</p>
             </div>
             <p class="price">$192.00</p>
@@ -45,17 +52,144 @@
             <div class="color_picker">
                 <h4>Colors:</h4>
                 <label>
-                    <input type="radio" name="color1" value="1">
-                    <div class="custom_radio blue"></div>
+                    <input type="radio" name="color" value="1">
+                    <div class="custom_radio_color blue"></div>
                 </label>
                 <label>
-                    <input type="radio" name="color2" value="2">
-                    <div class="custom_radio pink"></div>
+                    <input type="radio" name="color" value="2">
+                    <div class="custom_radio_color pink"></div>
                 </label>
             </div>
-        
+
+            <div class="size_picker">
+                <h4>Size:</h4>
+                <label>
+                    <input type="radio" name="size">
+                    <div class="size-btn">XS</div>
+                </label>
+                <label>
+                    <input type="radio" name="size">
+                    <div class="size-btn">S</div>
+                </label>
+                <label>
+                    <input type="radio" name="size">
+                    <div class="size-btn">M</div>
+                </label>
+                <label>
+                    <input type="radio" name="size">
+                    <div class="size-btn">L</div>
+                </label>
+                <label>
+                    <input type="radio" name="size">
+                    <div class="size-btn">XL</div>
+                </label>
+            </div>
+            <div class="submit-increment-like-container">
+                <div>
+                    <img class="increment_icon" src="assets/icon/num-increment.png" alt="number of items you want to buy">
+                </div>
+                <div>
+                    <button type="submit">Buy Now</button>
+                </div>
+                <div class="like">
+                    <img src="assets/icon/Wishlist.png">
+                </div>
+            </div>
+            <div class="delivery_info_container">
+                <div class="delivery_info_container2">
+                    <div>
+                        <img class="icon" src="assets/icon/icon-delivery-black.png">
+                    </div>
+                    <div>
+                        <p class="bold">Free Delivery</p>
+                        <p>Enter your postal code for delivery availability</p>    
+                    </div>
+                </div>
+                <hr>
+                <div class="delivery_info_container2">
+                    <div>
+                        <img class="icon" src="assets/icon/icon-return-black.png">
+                    </div>
+                    <div>
+                        <p class="bold">Return Delivery</p>
+                        <p>Free 30 days delivery returns</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     </section>
+
+    <section>
+        <div><h3 class="red">Related Items:</h3></div>
+        <div class="related_items_container">
+            <div>
+                <div class="image-box-medium">
+                    <img src="assets/img/Flash sales img 1.png" alt="image of a HAVIT HV-G92 Gamepad">
+                </div>
+                <div class="image_descrition_container">
+                    <p class="bold">HAVIT HV-G92 Gamepad</p>
+                    <p class="red">$120</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="image-box-medium">
+                    <img src="assets/img/Flash sales img 2.png" alt="image of a AK-900 Wired Keyboard">
+                </div>
+                <div class="image_descrition_container">
+                    <p class="bold">AK-900 Wired Keyboard</p>
+                    <p class="red">$960</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="image-box-medium">
+                    <img src="assets/img/Flash sales img 3.png" alt="image of a IPS LCD Gaming Monitor">
+                </div>
+                <div class="image_descrition_container">
+                    <p class="bold">IPS LCD Gaming Monitor</p>
+                    <p class="red">$370</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="image-box-medium">
+                    <img src="assets/img/Flash sales img 4.png" alt="image of a chair">
+                </div>
+                <div class="image_descrition_container">
+                    <p class="bold">Brown Wooden Chair</p>
+                    <p class="red">$160</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html> 
