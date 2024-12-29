@@ -1,0 +1,71 @@
+@import url(base.css);
+section{
+    margin: 0px;
+}
+
+.image_box{
+    background-color: var(--secondary);
+    padding: var(--space-md);
+    margin: var(--space-md);
+    width: fit-content;
+}
+.image_box_large{
+    background-color: var(--secondary);
+    padding: var(--space-md);
+    margin: var(--space-md);
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image_box_large > img{
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+    
+}
+
+.image_box > img{
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+.small_img_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: auto;
+}
+.start_of_page{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.main_section_container{
+    display: flex;
+    justify-content: flex-start;
+}
+.color_picker{
+    display: flex;
+    gap: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.custom_radio{
+    width: 20px;
+    height: 20px;
+    border-radius: 60%;
+}
+.divider{
+    margin: 20px 0;
+}
+.blue{
+    background-color: var(--hover-button1);
+}
+.pink{
+    background-color: var(--hover-button);
+}
+input[type="radio"]:checked + .custom_radio {
+    border: 2px solid rgb(52, 50, 50);
+  }
