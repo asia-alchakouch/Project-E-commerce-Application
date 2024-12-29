@@ -1,14 +1,7 @@
+@import url(base.css);
+
 /* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
+
   main {
     display: flex;
     max-width: 1000px;
@@ -17,6 +10,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   /* Left Section - Image */
@@ -101,3 +96,64 @@ body {
     text-decoration: underline;
   }
   
+
+ /* Responsive Styles */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .login-image {
+    display: none; /
+  }
+
+  section.login {
+    padding: 20px;
+  }
+
+  .form-group input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .form-submit button {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  section.login h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  section.login {
+    padding: 15px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+
+  .form-submit button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  section.login h1 {
+    font-size: 20px;
+  }
+
+  section.login div p {
+    font-size: 12px;
+  }
+
+  section.login div p a {
+    font-size: 12px;
+  }
+}
