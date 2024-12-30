@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/products-listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--------HEADER------->
+    <header>
+        <nav>
+            <h2 class="logo">LOGO</h2>
+           <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="signup.html">Sign Up</a></li>
+           </ul>
+           <ul class="user-actions">
+               <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+               <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               <li><a href="mange-account.html"><i class="fa-solid fa-user"></i></a></li>
+           </ul>
+       </nav>
+       <hr>
+   </header>
+
+   <!---------------------------Main Section--------------------------------->
+   <main>
+    <section>
+
+        <!--------------Side Bar--------------->
+        <div class="sidebar">
+            <h2>Filter Products</h2>
+            <!-- Categories Filter -->
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <label><input type="checkbox"> Woman's Fashion</label>
+                <label><input type="checkbox"> Men's Fashion</label>
+                <label><input type="checkbox"> Electronics</label>
+                <label><input type="checkbox"> Home & Lifestyle</label>
+                <label><input type="checkbox"> Medicine</label>
+                <label><input type="checkbox"> Sports & Outdoor</label>
+                <label><input type="checkbox"> Baby's & Toys</label>
+                <label><input type="checkbox"> Groceries & Pets</label>
+                <label><input type="checkbox"> Health & Beauty</label>
+            </div>
+    
+            <!-- Color Filter -->
+            <div class="filter-group">
+                <h3>Color</h3>
+                <div class="color-options">
+                    <div class="color-red"></div>
+                    <div class="color-blue"></div>
+                    <div class="color-green"></div>
+                    <div class="color-brown"></div>
+                    <div class="color-orange"></div>
+                    <div class="color-pink"></div>
+                    <div class="color-black"></div>
+                    <div class="color-white"></div>
+                </div>
+            </div>
+    
+            <!-- Size Filter -->
+            <div class="filter-group">
+                <h3>Size</h3>
+                <label><input type="radio" name="size"> Small</label>
+                <label><input type="radio" name="size"> Medium</label>
+                <label><input type="radio" name="size"> Large</label>
+            </div>
+    
+            <!-- Max Price Filter -->
+            <div class="filter-group">
+                <h3>Max Price</h3>
+                <input type="range" min="0" max="1000" step="10" id="price-range">
+                <label for="price-range">Up to $<span id="price-value">1000</span></label>
+            </div>
+    
+            <!-- Apply Button -->
+            <div class="filter-group">
+                <button>Apply Filters</button>
+            </div>
+        </div>
+
+        <div class="vl"></div>
+
+        <!--------------Product Listing--------------->
+        <div class="products-lisiting-container">
+            <div class="products-listing-header">
+                <h2>Category Tilte</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="what are you looking for?">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="products-container">
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 1.png" alt="black and purple package for a dry dog food">
+                    </div>
+                    <h4 class="product-title">Breed Dry Dog Food</h4>
+                    <p class="price">$100</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 2.png" alt="balck canon camera">
+                    </div>
+                    <h4 class="product-title">CANON EOS DSLR Camera</h4>
+                    <p class="price">$300</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 3.png" alt="black ASUS gaming laptop">
+                    </div>
+                    <h4 class="product-title">ASUS FHD Gaming Laptop</h4>
+                    <p class="price">$700</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 4.png" alt="purple and white curology package set">
+                    </div>
+                    <h4 class="product-title">Curology Product Set</h4>
+                    <p class="price">$500</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 5.png" alt="red electronic car toy">
+                    </div> 
+                    <h4 class="product-title">Kids Electric Car</h4>
+                    <p class="price">$200</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 6.png" alt="yellow soccer shose">
+                    </div>
+                    <h4 class="product-title">Jr.Zoom Soccer Cleats</h4>
+                    <p class="price">$160</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 7.png" alt="black and red gaming hand">
+                    </div>
+                    <h4 class="product-title"z>GP11 Shooter USB Gamepad</h4>
+                    <p class="price">$100</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 8.png" alt="dark green jacket">
+                    </div>
+                    <h4 class="product-title"z>Quilted Satin Jacket</h4>
+                    <p class="price">$500</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="./assets/img/product list 8.png" alt="dark green jacket">
+                    </div>
+                    <h4 class="product-title"z>Quilted Satin Jacket</h4>
+                    <p class="price">$500</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="product-details.html">view product...</a>
+                </div>
+            </div>
+            <div class="view-all-button">
+                <button>Load More</button>
+            </div>
+
+        </div>
+
+    </section>
+   </main>
+
+   <!--------FOOTER------->
+   <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div>
+                <h2 class="logo">LOGO</h2>
+            </div>
+            <h3>Subscribe</h3>
+            <p>Get 10% off your first order</p>
+        </div>
+        <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+                <li><p>Location: Sharjah, UAE</p></li>
+                <li><p><a href="mailto:ecommerce@gmail.com">ecommerce@gmail.com</a></p></li>
+                <li><p><a href="tel:123456789">+971-75-585-4322</a></p></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Account</h3>
+            <ul>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="signup.html">Login / Register</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="index.html">Shop</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Link</h3>
+            <ul>
+                <li><a href="https://example.com">Privacy Policy</a></li>
+                <li><a href="https://example.com">Terms Of Use</a></li>
+                <li><a href="https://example.com">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Download App</h3>
+            <p>Save $3 with App New User Only</p>
+            <div class="footer-section-app-links">
+                <a href="https://example.com"><i class="fa-brands fa-app-store-ios"></i></a>
+                <a href="https://example.com"><i class="fa-brands fa-google-play"></i></a>
+            </div>
+            <div class="footer-section-social-links">
+                <a href="https://example.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://example.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://example.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://example.com"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+</body>
+</html>

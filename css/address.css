@@ -88,4 +88,23 @@
     color: #fff;
   }
   
+  /* Responsive Styles */
+  @media (max-width: 1000px) {
+    .address-container{
+      flex-direction: column;
+    }
   
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #e6e6e6;
+    }
+  
+    .address-book {
+      padding: 1.5rem;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  }
