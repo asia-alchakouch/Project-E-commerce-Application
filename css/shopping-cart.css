@@ -1,0 +1,266 @@
+@import url(base.css);
+
+/* General container styling */
+.container {
+    font-family: Arial, sans-serif;
+    margin: auto ;
+    max-width: 70%;
+    padding: 30px;
+    background-color: #ffffff;
+    
+}
+
+/* Cart container */
+.cart-container {
+    flex: 3;
+    padding: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.title {
+    font-size: 28px;
+    color: #1f1c1c;
+    margin-bottom: 30px;
+    text-align: start;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+
+/* Cart table styling */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Buttons */
+.remove-btn {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 3px 7px;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background: #c72d3e;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Cart actions */
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.return-btn {
+    background-color: #919090;
+}
+
+.return-btn:hover {
+    background-color: #a9a9a9;
+}
+
+.update-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.update-btn:hover {
+    background-color: #3e3e3e;
+}
+
+/* Cart summary styling */
+.cart-summary {
+    flex: 1;
+    padding: 25px;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 35%;
+}
+
+.coupon {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.coupon-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.apply-btn {
+    background-color: #e63946;
+    color: #fff;
+}
+
+.apply-btn:hover {
+    background-color: #c72d3e;
+}
+
+/* Total summary */
+.total h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.total p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.total span {
+    font-weight: bold;
+}
+
+.checkout-btn {
+    width: 100%;
+    background-color: #e63946;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #c72d3e;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px; 
+    }
+
+    .cart-container {
+        padding: 20px;
+        flex: 1 1 auto; 
+    }
+
+    .cart-summary {
+        margin: 20px auto; 
+        max-width: 90%; 
+    }
+
+    .cart-actions {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    .btn {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%; 
+        padding: 10px;
+    }
+
+    .cart-table th, 
+    .cart-table td {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+    .product-image {
+        width: 50px;
+        height: 50px; 
+        margin-right: 10px;
+    }
+
+    .product-name {
+        font-size: 14px; 
+    }
+
+    .cart-actions {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .coupon {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .coupon-input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%; 
+    }
+
+    .cart-summary {
+        margin: 20px auto; 
+        padding: 15px; 
+        max-width: 100%;
+    }
+
+    .checkout-btn {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+}
