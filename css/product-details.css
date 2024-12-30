@@ -167,17 +167,15 @@ hr{
 }
 
 
-/* General styles remain unchanged */
 
-/* Responsive styles for screen sizes under 1100px */
 @media (max-width: 950px) {
     .main_section_container {
-        flex-direction: column; /* Stack everything vertically */
-        align-items: center; /* Center-align content */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .start_of_page {
-        flex-direction: column; /* Stack small images vertically */
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -185,30 +183,30 @@ hr{
     .small_img_container {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row; /* Align small images horizontally */
-        gap: 10px; /* Add spacing between images */
+        flex-direction: row;
+        gap: 10px;
     }
 
     .small_img_container .image_box img {
-        width: 60px; /* Adjust size for smaller screens */
+        width: 60px;
         height: auto;
     }
 
     .image_box_large img {
-        width: 90%; /* Make the large image responsive */
-        max-width: 500px; /* Limit maximum size */
-        margin-bottom: 20px; /* Add spacing below large image */
+        width: 90%;
+        max-width: 500px;
+        margin-bottom: 20px;
     }
 
     .delivery_info_container {
-        width: 90%; /* Ensure content fits smaller screens */
-        margin: 20px auto; /* Center align content */
+        width: 90%;
+        margin: 20px auto; 
     }
 
 
 
     .related_items_section {
-        margin-top: 40px; /* Reduce spacing for smaller screens */
+        margin-top: 40px; 
     }
 
 
