@@ -1,54 +1,141 @@
 @import url(base.css);
 
 /* Checkout Page */
+
 form {
-    max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
 }
 
-form h1 {
-    text-align: center;
-    margin-bottom: 20px;
+form h2 {
+    font-size: var(--space-lg);
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    margin-bottom: var(--space-xl);
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    color: #aaafb4;
+    font-size: var(--space-md);
 }
 
-form input {
-    width: calc(100% - 20px);
+form .shipping-details input {
+    width: 100%;
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+    font-size: var;
+    background-color: var(--secondary);
+    border-style: none;
+}
+
+.checkbox-container{
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+}
+
+.checkbox-container label{
+    margin: 0;
+    color: var(--text2);
+}
+
+.form-group input[type="checkbox"] {
+    margin: 0;
+    margin-right: var(--space-sm);
+    width: var(--space-md);
+    height: var(--space-md);
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-xxl);
+}
+
+.order-summary h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.order-summary ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-summary ul li .price{
+    margin-left: auto;
+}
+
+.order-summary img{
+    display: block;
+    width: var(--space-xl);
+    height: auto;
+    margin-right: var(--space-lg);
+}
+
+.order-summary .space{
+    margin-top: var(--space-xl);
+}
+
+.order-summary hr{
+    margin-top: var(--space-md) ;
+    margin-bottom: var(--space-md);
+}
+
+.payment-methods {
+    margin-bottom: var(--space-md);
+}
+
+.payment-methods label {
+    color: var(--text2);
+}
+
+.payment-methods label input{
+    margin-right: var(--space-md);
+}
+
+.coupon-section {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.coupon-section input {
+    flex: 1;
     padding: 10px;
-    margin-bottom: 15px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 4px;
 }
 
 .place-order-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
     display: block;
-    width: calc(100% - 20px);
-    margin: 20px auto 0;
-    text-align: center;
+    width: 100%;
 }
 
-.place-order-btn:hover {
-    background-color: #45a049;
-}
+@media (max-width: 1000px) {
 
-/* Additional styling for sections */
-section {
-    margin-bottom: 20px;
-}
+    form {
+        margin: 0 auto;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+    }
+  
+    
+  
+  }
+
+
