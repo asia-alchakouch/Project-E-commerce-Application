@@ -1,15 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
     <link rel="stylesheet" href="css/product-details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <title>Product Details</title>
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-    <!--------HEADER------->
     <header>
         <nav>
             <h2 class="logo">LOGO</h2>
@@ -27,57 +26,162 @@
        </nav>
        <hr>
    </header>
-   
-    <main>
-        <!--------Product Details Section------->
-        <section class="product-details">
-            <div class="product-container">
-                <div class="product-image">
-                    <img src="assets/img/Smartphone.png" alt="Smartphone">
+   <main>
+        <section class="main_section_container">
+            <section class="start_of_page">
+                <div class="small_img_container">
+                    <div class="image_box">
+                        <img src="assets/img/product details 2.png" alt="first image of Havic HV G-92 Gamepad">
+                    </div>
+                    <div class="image_box">
+                        <img src="assets/img/product details 3.png" alt="second image of Havic HV G-92 Gamepad">
+                    </div>
+                    <div class="image_box">
+                        <img src="assets/img/product details 4.png" alt="third image of Havic HV G-92 Gamepad">
+                    </div>
+                    <div class="image_box">
+                        <img src="assets/img/product details 5.png" alt="fourth image of Havic HV G-92 Gamepad">
+                    </div>
                 </div>
-                <div class="product-info">
-                    <h1>Smartphone</h1>
-                    <p class="price">$600</p>
-                    <p class="description">
-                        Experience the ultimate performance and sleek design with this state-of-the-art smartphone. 
-                        Equipped with the latest technology, a high-resolution camera, and long-lasting battery life, 
-                        it’s perfect for everyday use and gaming.
-                    </p>
+            </section>
+
+            <div>
+                <div class="image_box_large">
+                    <img class="large_image" src="assets/img/product details 1.png" alt="main image of Havic HV G-92 Gamepad">
+                </div>
+            </div>
+
+            
+            <div class="details_container">
+                <p class="item_name"><h3>Havic HV G-92 Gamepad</h3></p>
+                <div class="rating">
                     <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
                         <i class="fa-regular fa-star"></i>
-                        <span>(120 reviews)</span>
                     </div>
-                    <div class="purchase-options">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" min="1" value="1">
-                        <button class="add-to-cart">Add to Cart</button>
-                        <button class="buy-now">Buy Now</button>
+                    <p class="reviews_num">(150 reviews)</p>
+                </div>
+                <p class="price">$192.00</p>
+                <p class="description">PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive</p>
+                
+                <hr class="divider">
+                <form>
+                
+                    <div class="color_picker">
+                        <h4>Colors:</h4>
+                        <label>
+                            <input type="radio" name="color" value="1">
+                            <div class="custom_radio_color blue"></div>
+                        </label>
+                        <label>
+                            <input type="radio" name="color" value="2">
+                            <div class="custom_radio_color pink"></div>
+                        </label>
+                    </div>
+
+                    <div class="size_picker">
+                        <h4>Size:</h4>
+                        <label>
+                            <input type="radio" name="size">
+                            <div class="size-btn">XS</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="size">
+                            <div class="size-btn">S</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="size">
+                            <div class="size-btn">M</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="size">
+                            <div class="size-btn">L</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="size">
+                            <div class="size-btn">XL</div>
+                        </label>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Buy Now</button>
+                    </div>
+                </form>
+                <div class="delivery_info_container">
+                    <div class="delivery_info_container2">
+                        <div>
+                            <img class="icon" src="assets/icon/icon-delivery-black.png" alt="icon of a delivery truck">
+                        </div>
+                        <div>
+                            <p class="bold">Free Delivery</p>
+                            <p>Enter your postal code for delivery availability</p>    
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="delivery_info_container2">
+                        <div>
+                            <img class="icon" src="assets/icon/icon-return-black.png" alt="recycle icon">
+                        </div>
+                        <div>
+                            <p class="bold">Return Delivery</p>
+                            <p>Free 30 days delivery returns</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--------Reviews Section------->
-        <section class="reviews-section">
-            <h2>Customer Reviews</h2>
-            <div class="review">
-                <h4>John Doe</h4>
-                <p>★★★★★</p>
-                <p>Amazing product! The performance is top-notch, and I love the camera quality.</p>
-            </div>
-            <div class="review">
-                <h4>Jane Smith</h4>
-                <p>★★★★☆</p>
-                <p>Good value for the price. Battery life could be better.</p>
+        <section class="section2">
+            <h3>Product Reviews</h3>
+            <div class="rating_container">
+                <div class="rating_box">
+                    <div class="rating light_margin_bottom">
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>Review Title</h4>
+                    <p class="gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non libero tempore distinctio architecto corporis modi!
+                    </p>
+                    <div class="reviewers_data">
+                        <img class="gray_profile" src="assets/icon/gray-circle.png" alt="gray profile icon">
+                        <div class="reviewers_name_date">
+                            <p class="gray"><b>Reviewers Name</b><br>Date</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rating_box">
+                    <div class="rating light_margin_bottom">
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-solid fa-star gold"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>Review Title</h4>
+                    <p class="gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsa quod libero obcaecati neque nostrum eius, sapiente repellendus aspernatur cumque?
+                    </p>
+                    <div class="reviewers_data">
+                        <img class="gray_profile" src="assets/icon/gray-circle.png" alt="gray profile icon">
+                        <div class="reviewers_name_date">
+                            <p class="gray"><b>Reviewers Name</b><br>Date</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
 
-    <!--------FOOTER------->
+       
+    </main>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -130,5 +234,6 @@
             </div>
         </div>
     </footer>
+
 </body>
-</html>
+</html> 

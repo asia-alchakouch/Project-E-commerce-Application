@@ -4,96 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/wishlist.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Wishlist</title>
 </head>
 <body>
-     <!--------HEADER------->
-     <header>
-        <nav>
-            <h2 class="logo">LOGO</h2>
-           <ul class="nav-links">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li><a href="signup.html">Sign Up</a></li>
-           </ul>
-           <ul class="user-actions">
-               <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
-               <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-               <li><a href="mange-account.html"><i class="fa-solid fa-user"></i></a></li>
-           </ul>
-       </nav>
-       <hr>
-   </header>
-
+        <!--------HEADER------->
+        <header>
+            <nav>
+                <h2 class="logo">LOGO</h2>
+               <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="signup.html">Sign Up</a></li>
+               </ul>
+               <ul class="user-actions">
+                   <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                   <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                   <li><a href="mange-account.html"><i class="fa-solid fa-user"></i></a></li>
+               </ul>
+           </nav>
+           <hr>
+       </header>
     <main>
-        <section class="wishlist">
-            <div class="wishlist-item">
-                <img src="./assets/img/Flash sales img 4.png" alt="S-Series Comfort Chair">
-                <h2>S-Series Comfort Chair</h2>
-                <p>$250</p>
-                <a href="wishlist.html?remove=Product+Name+1" class="remove-btn">Remove</a>
+        <section class="section1 space_large">
+            <div class="wishlist_header_container">
+                <h4 class="red">Wishlist (4)</h4>
+                <form>
+                    <button class="wishlist_page_button">Move All To Bag</button>
+                </form>
             </div>
-            <div class="wishlist-item">
-                <img src="./assets/img/Best selling img 2.png" alt="Gucci duffle bag">
-                <h2>Gucci duffle bag</h2>
-                <p>$120</p>
-                <a href="wishlist.html?remove=Product+Name+2" class="remove-btn">Remove</a>
+            <div class="wishlist_images">
+                <div class="image_button_container">
+                    <div class="medium_image_container">
+                        <img class="wishlist_image" src="assets/img/Best selling img 2.png" alt="image of Gucci duffle bag">
+                    </div>
+                    <form>
+                        <button class="add_to_cart_button">Add To Cart</button>
+                    </form>
+                    <p class="bold light_spacing">Gucci duffle bag</p>
+                    <p class="red light_spacing">$960</p>
+                </div>
+
+                <div class="image_button_container">
+                    <div class="medium_image_container">
+                        <img class="wishlist_image" src="assets/img/product list 7.png" alt="image of GP11 shooter USB Gamepad">
+                    </div>
+                    <form>
+                        <button class="add_to_cart_button">Add To Cart</button>
+                    </form>
+                    <p class="bold light_spacing">GP11 Shooter USB Gamepad</p>
+                    <p class="red light_spacing">$550</p>
+                </div>
+
+                <div class="image_button_container">
+                    <div class="medium_image_container">
+                        <img class="wishlist_image" src="assets/img/product list 8.png" alt="image of Quilted Satin Jacket">
+                    </div>
+                    <form>
+                        <button class="add_to_cart_button">Add To Cart</button>
+                    </form>
+                    <p class="bold light_spacing">Quilted Satin Jacket</p>
+                    <p class="red light_spacing">$750</p>
+                </div>
+
+                <div class="image_button_container">
+                    <div class="medium_image_container">
+                        <img class="wishlist_image" src="assets/img/Best selling img 3.png" alt="image of RGB liquid CPU Cooler">
+                    </div>
+                    <form>
+                        <button class="add_to_cart_button">Add To Cart</button>
+                    </form>
+                    <p class="bold light_spacing">RGB liquid CPU Cooler</p>
+                    <p class="red light_spacing">$1960</p>
+                </div>
+
+                <div class="image_button_container">
+                    <div class="medium_image_container">
+                        <img class="wishlist_image" src="assets/img/product list 3.png" alt="image of ASUS FHD Gaming Laptop">
+                    </div>
+                    <form>
+                        <button class="add_to_cart_button">Add To Cart</button>
+                    </form>
+                    <p class="bold light_spacing">GP11 Shooter USB Gamepad</p>
+                    <p class="red light_spacing">$550</p>
+                </div>
+
+                <div class="image_button_container">
+                    <div class="medium_image_container">
+                        <img class="wishlist_image"src="assets/img/Flash sales img 3.png" alt="image of IPS LCD Gaming Monitor">
+                    </div>
+                    <form>
+                        <button class="add_to_cart_button">Add To Cart</button>
+                    </form>
+                    <p class="bold light_spacing">GP11 Shooter USB Gamepad</p>
+                    <p class="red light_spacing">$550</p>
+                </div>
+
+                <div class="image_button_container">
+                    <div class="medium_image_container">
+                        <img class="wishlist_image" src="assets/img/Flash sales img 1.png" alt="image of HAVIT HV-G92 Gamepad">
+                    </div>
+                    <form>
+                        <button class="add_to_cart_button">Add To Cart</button>
+                    </form>
+                    <p class="bold light_spacing">GP11 Shooter USB Gamepad</p>
+                    <p class="red light_spacing">$550</p>
+                </div>
+
+                <div class="image_button_container">
+                    <div class="medium_image_container">
+                        <img class="wishlist_image" src="assets/img/Flash sales img 2.png" alt="image of AK-900 Wired Keyboard">
+                    </div>
+                    <form>
+                        <button class="add_to_cart_button">Add To Cart</button>
+                    </form>
+                    <p class="bold light_spacing">GP11 Shooter USB Gamepad</p>
+                    <p class="red light_spacing">$550</p>
+                </div>
+
             </div>
         </section>
     </main>
-    <!--------FOOTER------->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <div>
-                    <h2 class="logo">LOGO</h2>
+
+        <!--------FOOTER------->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div>
+                        <h2 class="logo">LOGO</h2>
+                    </div>
+                    <h3>Subscribe</h3>
+                    <p>Get 10% off your first order</p>
                 </div>
-                <h3>Subscribe</h3>
-                <p>Get 10% off your first order</p>
-            </div>
-            <div class="footer-section">
-                <h3>Support</h3>
-                <ul>
-                    <li><p>Location: Sharjah, UAE</p></li>
-                    <li><p><a href="mailto:ecommerce@gmail.com">ecommerce@gmail.com</a></p></li>
-                    <li><p><a href="tel:123456789">+971-75-585-4322</a></p></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Account</h3>
-                <ul>
-                    <li><a href="account.html">My Account</a></li>
-                    <li><a href="signup.html">Login / Register</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="wishlist.html">Wishlist</a></li>
-                    <li><a href="index.html">Shop</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Link</h3>
-                <ul>
-                    <li><a href="https://example.com">Privacy Policy</a></li>
-                    <li><a href="https://example.com">Terms Of Use</a></li>
-                    <li><a href="https://example.com">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Download App</h3>
-                <p>Save $3 with App New User Only</p>
-                <div class="footer-section-app-links">
-                    <a href="https://example.com"><i class="fa-brands fa-app-store-ios"></i></a>
-                    <a href="https://example.com"><i class="fa-brands fa-google-play"></i></a>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><p>Location: Sharjah, UAE</p></li>
+                        <li><p><a href="mailto:ecommerce@gmail.com">ecommerce@gmail.com</a></p></li>
+                        <li><p><a href="tel:123456789">+971-75-585-4322</a></p></li>
+                    </ul>
                 </div>
-                <div class="footer-section-social-links">
-                    <a href="https://example.com"><i class="fab fa-facebook"></i></a>
-                    <a href="https://example.com"><i class="fab fa-twitter"></i></a>
-                    <a href="https://example.com"><i class="fab fa-instagram"></i></a>
-                    <a href="https://example.com"><i class="fab fa-linkedin"></i></a>
+                <div class="footer-section">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="signup.html">Login / Register</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="index.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="https://example.com">Privacy Policy</a></li>
+                        <li><a href="https://example.com">Terms Of Use</a></li>
+                        <li><a href="https://example.com">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Download App</h3>
+                    <p>Save $3 with App New User Only</p>
+                    <div class="footer-section-app-links">
+                        <a href="https://example.com"><i class="fa-brands fa-app-store-ios"></i></a>
+                        <a href="https://example.com"><i class="fa-brands fa-google-play"></i></a>
+                    </div>
+                    <div class="footer-section-social-links">
+                        <a href="https://example.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://example.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://example.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://example.com"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+
 </body>
 </html>
